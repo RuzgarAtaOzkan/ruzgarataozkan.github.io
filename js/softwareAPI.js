@@ -20,14 +20,25 @@ class API {
 
     static async fetchRepos() {
         // requests information from the app.js server 
-        $.get(`/api`)
-        .done(data => {
+
+        try {
+            $.get(`https://www.api.github.com/users/uitwaaien6/repos`)
+            .done(data => {
+                this.displayRepos(data);
+            })
+            .fail(err => {
+                console.log(err.message);
+                throw err;
+            });
+    
+    
+            const response = await fetch('https://www.api.github.com/users/uitwaaien6/repos');
+            const data = await response.json();
             this.displayRepos(data);
-        })
-        .fail(err => {
-            console.log(err.message);
-            throw err;
-        });
+        } catch (error) {
+            console.log(error.message);
+        }
+
     }
 }
 

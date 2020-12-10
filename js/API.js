@@ -35,15 +35,28 @@ class API {
 
     static async fetchPopularRepos() {
         // requests information from the app.js server 
-        $.get(`/api`)
-        .done(data => {
-            const popular_repos = this.findPopularRepos(data);
-            this.displayPopularRepos(popular_repos);
-        })
-        .fail(err => {
-            console.log(err.message);
-            throw err;
-        });
+
+        try {
+            $.get(`https://www.api.github.com/users/uitwaaien6/repos`)
+            .done(data => {
+                const popular_repos = this.findPopularRepos(data);
+                this.displayPopularRepos(popular_repos);
+            })
+            .fail(err => {
+                if (err) {
+                    console.log(err);
+                    throw err;
+                }
+    
+            });
+    
+            const response = await fetch('https://www.api.github.com/users/uitwaaien6/repos');
+            const data = await response.json();
+            this.displayRepos(data);
+        } catch (error) {
+            console.log(error.message);
+        }
+
     }
 }
 
