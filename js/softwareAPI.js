@@ -22,18 +22,19 @@ class API {
         // requests information from the app.js server 
 
         try {
-            $.get(`https://www.api.github.com/users/uitwaaien6/repos`)
-            .done(data => {
-                this.displayRepos(data);
-            })
-            .fail(err => {
-                console.log(err.message);
-                throw err;
+            const url = 'https://api.github.com/users/warpedsoftware/repos';
+
+            const response = await fetch(url, {
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                }
             });
-    
-    
-            const response = await fetch('https://www.api.github.com/users/uitwaaien6/repos');
+
             const data = await response.json();
+
+            console.log(data);
+    
             this.displayRepos(data);
         } catch (error) {
             console.log(error.message);

@@ -1,12 +1,12 @@
-'use strict';
+
 
 class API {
 
     constructor() {
-        
+
     }
 
-    static findPopularRepos(res) {
+    findPopularRepos(res) {
         // extract the 3 most popular repos from the data passed in and return it
         let max_int = Number.MIN_SAFE_INTEGER; // being fancy, might be -1 as well
         let repos = [];
@@ -22,7 +22,8 @@ class API {
         return popular_repos;
     }
 
-    static displayPopularRepos(repos) {
+
+    displayPopularRepos(repos) {
         const sections = ['.popular-repos-table-first-repo', '.popular-repos-table-second-repo', '.popular-repos-table-third-repo'];
         for (let i = 0; i < sections.length; i++) {
             $(`${sections[i]}`).children()[0].children[0].href = repos[i].html_url;
@@ -37,22 +38,23 @@ class API {
         // requests information from the app.js server 
 
         try {
-            $.get(`https://www.api.github.com/users/uitwaaien6/repos`)
-            .done(data => {
-                const popular_repos = this.findPopularRepos(data);
-                this.displayPopularRepos(popular_repos);
-            })
-            .fail(err => {
-                if (err) {
-                    console.log(err);
-                    throw err;
+
+            const url = 'https://api.github.com/users/warpedsoftware/repos';
+
+            const response = await fetch(url, {
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
                 }
-    
             });
-    
-            const response = await fetch('https://www.api.github.com/users/uitwaaien6/repos');
+
             const data = await response.json();
-            this.displayRepos(data);
+
+            console.log(data);
+
+            const popular_repos = this.findPopularRepos(data);
+            this.displayRepos(popular_repos);
+        
         } catch (error) {
             console.log(error.message);
         }
