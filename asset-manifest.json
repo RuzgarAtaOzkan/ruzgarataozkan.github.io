@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.c4cb22f6.chunk.css",
-    "main.js": "/static/js/main.1e5b2d96.chunk.js",
-    "main.js.map": "/static/js/main.1e5b2d96.chunk.js.map",
+    "main.js": "/static/js/main.b81ad83e.chunk.js",
+    "main.js.map": "/static/js/main.b81ad83e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.755054b0.js",
     "runtime-main.js.map": "/static/js/runtime-main.755054b0.js.map",
-    "static/js/2.e4ac600d.chunk.js": "/static/js/2.e4ac600d.chunk.js",
-    "static/js/2.e4ac600d.chunk.js.map": "/static/js/2.e4ac600d.chunk.js.map",
+    "static/js/2.2871bd3a.chunk.js": "/static/js/2.2871bd3a.chunk.js",
+    "static/js/2.2871bd3a.chunk.js.map": "/static/js/2.2871bd3a.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.c4cb22f6.chunk.css.map": "/static/css/main.c4cb22f6.chunk.css.map",
-    "static/js/2.e4ac600d.chunk.js.LICENSE.txt": "/static/js/2.e4ac600d.chunk.js.LICENSE.txt",
+    "static/js/2.2871bd3a.chunk.js.LICENSE.txt": "/static/js/2.2871bd3a.chunk.js.LICENSE.txt",
     "static/media/bibeka_logo.42e584cb.jpeg": "/static/media/bibeka_logo.42e584cb.jpeg",
     "static/media/image_logo2.d38965fa.png": "/static/media/image_logo2.d38965fa.png"
   },
   "entrypoints": [
     "static/js/runtime-main.755054b0.js",
-    "static/js/2.e4ac600d.chunk.js",
+    "static/js/2.2871bd3a.chunk.js",
     "static/css/main.c4cb22f6.chunk.css",
-    "static/js/main.1e5b2d96.chunk.js"
+    "static/js/main.b81ad83e.chunk.js"
   ]
 }
