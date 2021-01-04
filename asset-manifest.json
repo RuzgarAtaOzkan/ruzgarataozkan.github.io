@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.fd11b136.chunk.css",
-    "main.js": "/static/js/main.58e276a2.chunk.js",
-    "main.js.map": "/static/js/main.58e276a2.chunk.js.map",
+    "main.css": "/static/css/main.d28d7d78.chunk.css",
+    "main.js": "/static/js/main.e91ab385.chunk.js",
+    "main.js.map": "/static/js/main.e91ab385.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.755054b0.js",
     "runtime-main.js.map": "/static/js/runtime-main.755054b0.js.map",
-    "static/js/2.6ad4e6d2.chunk.js": "/static/js/2.6ad4e6d2.chunk.js",
-    "static/js/2.6ad4e6d2.chunk.js.map": "/static/js/2.6ad4e6d2.chunk.js.map",
+    "static/js/2.2d9d4c08.chunk.js": "/static/js/2.2d9d4c08.chunk.js",
+    "static/js/2.2d9d4c08.chunk.js.map": "/static/js/2.2d9d4c08.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.fd11b136.chunk.css.map": "/static/css/main.fd11b136.chunk.css.map",
-    "static/js/2.6ad4e6d2.chunk.js.LICENSE.txt": "/static/js/2.6ad4e6d2.chunk.js.LICENSE.txt",
+    "static/css/main.d28d7d78.chunk.css.map": "/static/css/main.d28d7d78.chunk.css.map",
+    "static/js/2.2d9d4c08.chunk.js.LICENSE.txt": "/static/js/2.2d9d4c08.chunk.js.LICENSE.txt",
     "static/media/bibeka_logo.42e584cb.jpeg": "/static/media/bibeka_logo.42e584cb.jpeg",
     "static/media/image_logo2.d38965fa.png": "/static/media/image_logo2.d38965fa.png"
   },
   "entrypoints": [
     "static/js/runtime-main.755054b0.js",
-    "static/js/2.6ad4e6d2.chunk.js",
-    "static/css/main.fd11b136.chunk.css",
-    "static/js/main.58e276a2.chunk.js"
+    "static/js/2.2d9d4c08.chunk.js",
+    "static/css/main.d28d7d78.chunk.css",
+    "static/js/main.e91ab385.chunk.js"
   ]
 }
