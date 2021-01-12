@@ -9,6 +9,7 @@ class UserInterface {
     static getDOMElements() {
         return {
             header: $('header'),
+            contact_me: $('#contact-me'),
             dropdown: $('.dropdown'),
             global_nav: $('.global-nav'),
             nav_button: $('#nav-button'),
@@ -18,6 +19,10 @@ class UserInterface {
 
     static eventListeners(switcher) {
         const dom = this.getDOMElements();
+
+        dom.contact_me.click(() => {
+            window.alert(' ~ Coming Soon...');
+        });
 
         // navigaton dropdown menu slider sandvic button
         dom.nav_button.click(() => {
