@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Gravity-Regular", sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    padding: 40px 10px;
+    width: 100%;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+.header-scroll {
+    padding: 0px 10px;
+}
+
+.global-nav {
+    list-style: none;
+    position: relative;
+    left: 18%;
+    transition: all 0.2s ease-in-out;
+}
+
+.global-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown div {
+    display: inline-block;
+}
+
+.global-nav ul li {
+    display: inline-block;
+    transition: all 0.3s ease-in;
+}
+
+.global-nav a {
+    padding: 15px 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    transition: all 0.3 ease-in-out;
+}
+
+.global-nav ul li:hover {
+    cursor: pointer;
+    background-color:rgba(255, 255, 255, 0.05);
+}
+
+#nav-button {
+    position: absolute;
+    display: none;
+    border-radius: 5px;
+    background-color: white;
+    border: 0.6px solid grey;
+    width: 4rem;
+    vertical-align: middle;
+}
+
+.fa-bars {
+    font-size: 35px;
+    font-weight: 100;
+    padding: 3px;
+    cursor: pointer;
+}
+
+#contact-me {
+    margin-left: 32rem;
+}
+
+/* digital arts section */
+
+.digital-arts-container {
+    width: 100%;
+}
+
+.digital-arts {
+    width: 60%;
+    position: relative;
+    left: 20%;
+    padding: 150px 0;
+    text-align: center;
+    transition: all 0.3s ease-in;
+}
+
+.digital-arts-image img {
+    width: 800px;
+    padding: 100px 0;
+    transition: all 0.3s ease-in;
+}
+
+/* footer section */
+footer {
+    width: 100%;
+    background-color: #242424;
+    color: white;
+}
+
+.footer-title-social-bar-inspired-container {
+    padding: 100px 0;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+.footer-title-social-bar-inspired-container div {
+    padding: 15px 0;
+}
+
+.footer h3 {
+    font-weight: normal;
+    letter-spacing: 1.5px;
+}
+
+.footer-social-bar li {
+    display: inline-block;
+    font-size: 35px;
+    padding: 0 7px;
+}
+
+.footer-social-bar i {
+    color: white;
+    font-size: 2.4rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer-inspired {
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-inspired p {
+    letter-spacing: 1.5px;
+    font-size: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.footer-nav {
+    width: 100%;
+    background-color: #191919;
+    text-align: center;
+    
+}
+
+.footer-nav li {
+    display: inline-block;
+    padding: 30px 80px;
+    font-size: 1.1rem;
+    transition: all 0.2s ease-in-out;
+    letter-spacing: 1.1px;
+}
+
+@media only screen and (max-width: 1500px) {
+    #contact-me {
+        margin-left: 25rem;
+    }
+
+}
+
+@media only screen and (max-width: 1300px) {
+    #contact-me {
+        margin-left: 18rem;
+    }
+    
+    .digital-arts {
+        width: 80%;
+        left: 10%;
+    }
+
+    .digital-arts-image img {
+        width: 700px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+
+    .global-nav {
+        left: 10%;
+    }
+
+    #contact-me {
+        margin-left: 14rem;
+    }
+
+    .popular-repos {
+        width: 100%;
+        max-width: 100%;
+        left: 0%;
+    }
+
+    .footer-nav li {
+        padding: 20px 40px;
+    }
+
+    .digital-arts {
+        left: 5%;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    header {
+        padding: 0px 10px;
+        background-color: white;
+    }
+
+    .global-nav a {
+        color: black;
+    }
+
+    #contact-me {
+        margin: 0;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    .dropdown li {
+        display: block;
+    }
+
+    #nav-button {
+        display: block;
+        right: 15%;
+    }
+
+    .digital-arts-image img {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    .digital-arts {
+        width: 100%;
+        left: 0%;
+    }
+
+    .digital-arts-image img {
+        width: 400px;
+    }
+
+    .footer-nav li {
+        padding: 20px 5px;
+    }
+
+}
