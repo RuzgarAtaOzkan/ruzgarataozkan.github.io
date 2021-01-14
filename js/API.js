@@ -1,5 +1,8 @@
 'use strict';
 
+// Initialize
+
+
 class API {
 
     constructor() {
