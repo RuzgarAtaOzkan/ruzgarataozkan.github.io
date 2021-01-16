@@ -42,7 +42,7 @@ class API {
         const xhr = new XMLHttpRequest();
         xhr.open('GET', 'https://api.github.com/users/uitwaaien6/repos', true);
 
-        xhr.onload = () => {
+        xhr.onload = () => { // using arrow function to reach the functions of the outer class
 
             if (xhr.status == 200) {
                 const data = JSON.parse(xhr.response);
