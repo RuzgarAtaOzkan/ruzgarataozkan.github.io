@@ -82,14 +82,6 @@ header {
     margin-left: 28rem;
 }
 
-.home-image {
-    background-image: url("../images/ruzgar-image2.JPG");
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .home-title-div {
     position: absolute;
     top: 45%;
@@ -434,4 +426,12 @@ footer a:hover {
     .popular-repos td {
         max-width: 200px;
     }
+}
+
+.home-image {
+    background-image: url("../images/ruzgar-image2.JPG");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
