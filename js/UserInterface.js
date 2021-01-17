@@ -13,7 +13,7 @@ class UserInterface {
             dropdown: $('.dropdown'),
             global_nav: $('.global-nav'),
             nav_button: $('#nav-button'),
-            read_more_text: $('.read-more-text'),
+            read_more_text: $('.read-more'),
         }
     }
 

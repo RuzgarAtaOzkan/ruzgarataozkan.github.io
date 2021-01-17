@@ -23,6 +23,7 @@ header {
 .header-scroll {
     padding: 0px 10px;
     background-color: white;
+    transition: all 0.3s ease-in-out;
 }
 
 .global-nav {
@@ -128,6 +129,7 @@ header {
     text-align: center;
     color: white;
     font-size: 2rem;
+    cursor: pointer;
 }
 
 .read-more div {
