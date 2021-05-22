@@ -23,7 +23,7 @@ class API {
         // requests information from the app.js server 
 
         const xhr = new XMLHttpRequest();
-        xhr.open('GET', 'https://api.github.com/users/uitwaaien6/repos', true);
+        xhr.open('GET', 'https://api.github.com/users/ruzgarataozkan/repos', true);
 
         xhr.onload = () => {
 
